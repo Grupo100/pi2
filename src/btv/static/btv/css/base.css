@@ -1,0 +1,248 @@
+:root {
+    --Btv-dark-primary: #388E3C;
+    --Btv-light-primary: #C8E6C9;
+    --Btv-primary: #4CAF50;
+    --Btv-primary-text: #212121;
+    --BTV-secondary-text: #757575;
+    --BTV-icon-text: #FFFFFF;
+    --BTV-accent-color: #8BC34A;
+    --BTV-divider: #BDBDBD;
+}
+
+
+/*CSS reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+nav ul {
+  list-style :none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, select {
+  vertical-align :middle;
+}
+
+
+/* Início */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Acima do Header */
+
+.aboveHeader {
+    display: flex;
+    width: calc(100%-256px);
+    padding: 8px 128px;
+    background-color: var(--Btv-light-primary);
+    justify-content: space-between;
+}
+
+.menuRedesSociais {
+    
+    list-style-type: none;
+
+}
+
+.botaoRedesSociais {
+    display: inline;
+    margin-right: 8px;
+    
+}
+
+.botaoRedesSociais__logo {
+    width: 16px;
+    height: 16px;
+}
+
+/* Header */
+
+.header {
+    background-color: var(--BTV-icon-text);
+    width: calc(100%-256px);
+    padding: 8px 128px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuPrincipal {
+    list-style-type: none;
+    margin: auto auto;
+}
+
+.menuPrincipal__item {
+    display: inline;
+    margin-right: 8px;
+}
+
+.menuPrincipal__item__botao {
+    font-size: 1.5em;
+    padding: 8px;
+
+}
+
+.menuPrincipal__item__botao:hover {
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.menuPrincipal__item__botao--doar {
+    background-color: var(--BTV-accent-color);
+    color: var(--BTV-icon-text);
+    border-radius: 8px;
+
+}
+
+/* Home */
+
+.homePage {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.homePhoto {
+    width:100%;
+
+}
+
+.intro {
+    display: flex;
+    width: calc(100%-256px);
+    margin: 0 128px;
+}
+
+.intro__card {
+    padding: 16px;
+    min-height: 288px;
+
+}
+
+
+
+.intro__card__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+.intro__card__text {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.intro__card__link {
+    color: var(--Btv-dark-primary);
+}
+
+.intro__card__link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Footer */ 
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--Btv-dark-primary);
+}
+
+.footer > * {
+    margin: 8px 0;
+}
+
+.footer :first-child {
+    margin-top: 16px;
+}
+
+
+.botaoRedesSociais__logo--footer {
+    color: var(--BTV-icon-text);
+    width: 32px;
+    height: 32px;
+}
+
+.menuFooter {
+    text-align: center;
+}
+
+.menuFooter__link {
+    margin:8px;
+    color: var(--BTV-icon-text);
+}
+
+.menuFooter__link__text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.copyright {
+    display: block;
+    color: var(--BTV-icon-text);
+    margin-bottom: 16px;
+}
+
+h1 {
+    color: var(--Btv-dark-primary);
+}

@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from btv import views
 
 urlpatterns = [
+    path('', views.home_view, name ='home'),
+    path('home', views.home_view, name = 'home'),
+    path('quem_somos/', views.quem_somos, name = 'quem_somos'),
+    path('localizacao/', views.localizacao, name = 'localizacao'),
+    path('transparencia/', views.transparencia, name = 'transparencia'),
+    path('administrativa/', views.administrativa, name = 'administrativa'),
+    path('doar/', views.doar, name = 'doar'),
     path('admin/', admin.site.urls),
 ]
