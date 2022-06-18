@@ -8,9 +8,6 @@ def home_view(request,*args, **kwargs):
 def quem_somos(request,*args, **kwargs):
     return render(request,"quem_somos.html", {})
 
-def localizacao(request,*args, **kwargs):
-    return render(request,"localizacao.html", {})
-
 def transparencia(request,*args, **kwargs):
     return render(request,"transparencia.html", {})
 

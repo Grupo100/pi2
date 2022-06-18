@@ -35,6 +35,8 @@ time, mark, audio, video {
 
 body {
   line-height: 1;
+  font-family: 'Inter', sans-serif;
+
 }
 
 article,aside,details,figcaption,figure,
@@ -195,6 +197,305 @@ body {
 .intro__card__link:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.missao {
+    background-color: var(--Btv-dark-primary);
+    text-align: center;
+    padding: 32px 0;
+}
+
+.missao__title {
+    color: var(--BTV-icon-text);
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.missao__text {
+    color: var(--BTV-icon-text);
+    font-size: 1.2em;
+
+}
+
+.patrocinadores {
+    padding: 16px 0;
+
+}
+
+.patrocinadores__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+
+.patrocinadores__list {
+    display: flex;
+    justify-content: center;
+    padding: 8px 128px;
+
+}
+
+.patrocinadores__list__logo {
+    margin: 0 16px;
+
+}
+
+.homeSonho {
+    background-color: var(--Btv-dark-primary);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 128px;
+}
+
+.homeSonho__item {
+    width: 486px;
+    padding: 16px 0;
+}
+
+
+
+.homeSonho__item__sonho__title {
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--BTV-icon-text);
+    margin-bottom: 8px;
+
+}
+
+.homeSonho__item__sonho__text {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: var(--BTV-icon-text);
+}
+
+.homeSonho__item__doar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doarButton {
+    width: 200px;
+    background-color: var(--BTV-accent-color);
+    padding:16px;
+    border-radius: 8px;
+}
+
+.doarButton:hover {
+    cursor: pointer;
+}
+
+.doarButton__text {
+    font-weight: bold;
+    font-size: 1.6em;
+    color: var(--BTV-icon-text);
+    text-align: center;
+}
+
+.localizacao {
+    padding: 16px 128px;
+
+}
+
+
+.localizacao__title {
+    text-align: center;
+    font-size: 1.4em;
+
+}
+
+.localizacao__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.localização__item {
+    max-width: 383px;
+}
+
+.localizacao__item__endereco {
+    text-align: center;
+}
+
+.localizacao__item__photo {
+    height: 267px;
+}
+
+
+/* Quem Somos */
+
+.quemSomos__main {
+    background-color: var(--Btv-light-primary);
+    padding: 16px 128px;
+}
+
+.quemSomos__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0;
+}
+
+.quemSomos__photo {
+    max-width: 586px;
+}
+
+.quemSomos__article {
+    max-width: 586px;
+
+}
+
+.quemSomos__title {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 16px;
+}
+
+.quemSomos__text {
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.missao--quemSomos {
+    background-color: var(--BTV-icon-text);
+    text-align: center;
+    padding: 32px 0;
+}
+
+.missao__title--quemSomos {
+    color: var(--Btv-primary-text);
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.missao__text--quemSomos {
+    color: var(--Btv-primary-text);
+    font-size: 1.2em;
+
+}
+
+
+/* Transparência */
+
+.transparencia__main {
+    background-color: var(--Btv-light-primary);
+    padding: 16px 128px;
+    min-height: 600px;
+}
+
+.transparencia__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 16px;
+}
+
+.transparencia__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transparencia__list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transparencia__list__item__title {
+    margin-bottom: 16px;
+
+
+}
+
+
+/* Doar */
+
+.doar__main {
+    background-color: var(--Btv-light-primary);
+}
+
+.socio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 128px;
+
+}
+
+.socio__item {
+    width: 586px;
+}
+
+.socio__item__photo {
+    width: 100%;
+}
+
+.socio__item__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 16px;
+}
+
+.socio__item__text {
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.meioDoacao {
+    display: flex;
+    padding: 8px 128px;
+    justify-content: center;
+}
+
+.meioDoacao__card {
+    background-color: var(--BTV-divider);
+    border-radius: 8px;
+    width: 304px;
+    height: 368px;
+    margin: 0 16px;
+}
+
+.meioDoacao__card__logo {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.meioDoacao__card__info {
+    background-color: var(--BTV-icon-text);
+    height: 50%;
+    box-sizing: border-box;
+    padding: 16px 0;
+}
+
+.meioDoacao__card__image {
+    width: 100%;
+}
+
+.meioDoacao__card__title {
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+
+.meioDoacao__card__text {
+    text-align: center;
+
+}
+
+.lema {
+    background-color: var(--BTV-icon-text);
+    padding: 36px 8px;
+
+}
+
+.lema__text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
 }
 
 /* Footer */ 

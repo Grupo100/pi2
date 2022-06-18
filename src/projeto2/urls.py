@@ -21,7 +21,6 @@ urlpatterns = [
     path('', views.home_view, name ='home'),
     path('home', views.home_view, name = 'home'),
     path('quem_somos/', views.quem_somos, name = 'quem_somos'),
-    path('localizacao/', views.localizacao, name = 'localizacao'),
     path('transparencia/', views.transparencia, name = 'transparencia'),
     path('administrativa/', views.administrativa, name = 'administrativa'),
     path('doar/', views.doar, name = 'doar'),

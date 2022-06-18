@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem te vi</title>
     <link rel="stylesheet" href="{% static 'btv/css/base.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     {% include 'above_header.html'%}
@@ -15,6 +18,7 @@
     
     {% block content %}
     {% endblock %}
+
 
     {% include 'footer.html' %}
 </body>

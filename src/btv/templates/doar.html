@@ -2,6 +2,42 @@
 {% load static %}
 
 {% block content %}
-
-<h2>Doar</h2>
+<section class="doar__main">
+    <section class="socio">
+        <section class="socio__item">
+            <h2 class="socio__item__title">Seja um sócio - Colaborador</h2>
+            <p class="socio__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hendrerit dolor magna eget est lorem. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Mauris commodo quis imperdiet massa tincidunt. Tristique magna sit amet purus gravida quis blandit turpis. Orci nulla pellentesque dignissim enim sit. Volutpat blandit aliquam etiam erat velit scelerisque in dictum non. Dignissim suspendisse in est ante in. Porttitor eget dolor morbi non arcu. Suspendisse ultrices gravida dictum fusce. Donec ac odio tempor orci. Scelerisque purus semper eget duis at tellus at urna. Nisl condimentum id venenatis a condimentum vitae sapien. Neque vitae tempus quam pellentesque nec nam aliquam sem et. Dui nunc mattis enim ut tellus.
+    
+                Sem viverra aliquet eget sit amet. Viverra maecenas accumsan lacus vel facilisis volutpat est velit egestas. Commodo sed egestas egestas fringilla phasellus faucibus. Volutpat commodo sed egestas egestas fringilla phasellus. Facilisi etiam dignissim diam quis enim lobortis. Amet tellus cras adipiscing enim eu. Posuere morbi leo urna molestie at elementum eu facilisis. Cursus metus aliquam eleifend mi. Tellus cras adipiscing enim eu turpis egestas. Aliquet porttitor lacus luctus accumsan tortor posuere ac. Mi sit amet mauris commodo.</p>
+        </section>
+        <section class="socio__item">
+            <img class="socio__item__photo" src="{% static 'btv/images/socio.jpg' %}">
+        </section>
+    </section>
+    <section class="meioDoacao">
+        <section class="meioDoacao__card">
+            <div class="meioDoacao__card__logo">
+                <img class="meioDoacao__card__image" src="{% static 'btv/images/caixa.png'%}">
+            </div>
+            
+            <div class="meioDoacao__card__info">
+                <h3 class="meioDoacao__card__title">Transferência Bancária</h3>
+                <p class="meioDoacao__card__text">Banco XXX <br>Agência: XXXX <br> Conta Corrente: XXXXX-X </p>
+            </div>
+            
+        </section>
+        <section class="meioDoacao__card">
+            <div class="meioDoacao__card__logo">
+                <img class="meioDoacao__card__image" src="{% static 'btv/images/pix.png'%}">
+            </div>
+            <div class="meioDoacao__card__info">
+                <h3 class="meioDoacao__card__title">PIX</h3>
+                <p class="meioDoacao__card__text">Banco XXX <br>Agência: XXXX <br> Conta Corrente: XXXXX-X </p>
+            </div>
+        </section>
+    </section>
+    <section class="lema">
+        <h3 class="lema__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+    </section>
+</section>
 {% endblock %}
