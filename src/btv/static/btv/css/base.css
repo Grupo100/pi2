@@ -293,6 +293,21 @@ body {
     text-align: center;
 }
 
+.novidades {
+    padding:16px 128px;
+}
+
+.novidades__title {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.novidades__list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .localizacao {
     padding: 16px 128px;
 
