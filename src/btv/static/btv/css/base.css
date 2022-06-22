@@ -295,6 +295,7 @@ body {
 
 .novidades {
     padding:16px 128px;
+
 }
 
 .novidades__title {
@@ -308,11 +309,14 @@ body {
     justify-content: space-between;
 }
 
+.instagram__novidades {
+   
+}
+
 .localizacao {
     padding: 16px 128px;
 
 }
-
 
 .localizacao__title {
     text-align: center;
@@ -323,11 +327,16 @@ body {
 .localizacao__list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.localização__item {
-    max-width: 383px;
+.localizacao__item {
+    width: 383px;
+    margin: 0 16px;
+}
+
+.localizacao__mapa {
+    width: 100%;
 }
 
 .localizacao__item__endereco {
@@ -335,7 +344,7 @@ body {
 }
 
 .localizacao__item__photo {
-    height: 267px;
+    width:100%;
 }
 
 
