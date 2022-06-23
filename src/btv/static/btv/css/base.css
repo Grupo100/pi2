@@ -6,6 +6,7 @@
     --BTV-secondary-text: #757575;
     --BTV-icon-text: #FFFFFF;
     --BTV-accent-color: #8BC34A;
+    --BTV-darker-accent-color: #68A81E;
     --BTV-divider: #BDBDBD;
 }
 
@@ -64,6 +65,8 @@ a {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  text-decoration: none;
+  color: unset;
 }
 
 table {
@@ -94,9 +97,7 @@ body {
 }
 
 .menuRedesSociais {
-    
     list-style-type: none;
-
 }
 
 .botaoRedesSociais {
@@ -105,10 +106,50 @@ body {
     
 }
 
-.botaoRedesSociais__logo {
+.botaoRedesSociais__link {
+    display: inline-flex;
+}
+
+.botaoRedesSociais__link--email:hover .icone path {
+    fill: red;
+}
+
+.botaoRedesSociais__link--email:hover  {
+    color: red;
+}
+
+.botaoRedesSociais__link--facebook:hover .icone path {
+    fill: blue;
+}
+
+.botaoRedesSociais__link--facebook:hover  {
+    color: blue;
+}
+
+.botaoRedesSociais__link--instagram:hover .icone path {
+    fill: purple;
+}
+
+.botaoRedesSociais__link--instagram:hover  {
+    color: purple;
+}
+
+.botaoRedesSociais__link--whatsapp:hover .icone path {
+    fill: green;
+}
+
+.botaoRedesSociais__link--whatsapp:hover  {
+    color: green;
+}
+
+
+.icone {
     width: 16px;
     height: 16px;
+    padding-right: 4px;
 }
+
+
 
 /* Header */
 
@@ -134,7 +175,6 @@ body {
 .menuPrincipal__item__botao {
     font-size: 1.5em;
     padding: 8px;
-
 }
 
 .menuPrincipal__item__botao:hover {
@@ -170,7 +210,7 @@ body {
 }
 
 .intro__card {
-    padding: 16px;
+    padding: 32px;
     min-height: 288px;
 
 }
@@ -181,7 +221,7 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 1.4em;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .intro__card__text {
@@ -219,14 +259,15 @@ body {
 }
 
 .patrocinadores {
-    padding: 16px 0;
+    padding: 32px 0;
 
 }
 
 .patrocinadores__title {
     text-align: center;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    margin-bottom: 16px;
 
 }
 
@@ -239,7 +280,7 @@ body {
 
 .patrocinadores__list__logo {
     margin: 0 16px;
-
+    width: 128px;
 }
 
 .homeSonho {
@@ -251,7 +292,7 @@ body {
 
 .homeSonho__item {
     width: 486px;
-    padding: 16px 0;
+    padding: 32px 0;
 }
 
 
@@ -284,6 +325,10 @@ body {
 
 .doarButton:hover {
     cursor: pointer;
+    background-color: #68A81E;
+    border: rgb(255,255,255);
+    border-style:solid;
+    border-width: 1px;
 }
 
 .doarButton__text {
@@ -294,7 +339,7 @@ body {
 }
 
 .novidades {
-    padding:16px 128px;
+    padding:32px 128px;
 
 }
 
@@ -309,12 +354,9 @@ body {
     justify-content: space-between;
 }
 
-.instagram__novidades {
-   
-}
 
 .localizacao {
-    padding: 16px 128px;
+    padding: 32px 128px;
 
 }
 
@@ -540,12 +582,15 @@ body {
     margin-top: 16px;
 }
 
-
-.botaoRedesSociais__logo--footer {
-    color: var(--BTV-icon-text);
+.icone--footer {
     width: 32px;
     height: 32px;
 }
+
+.icone--footer path{
+    fill:white;
+}
+
 
 .menuFooter {
     text-align: center;
@@ -566,6 +611,7 @@ body {
     display: block;
     color: var(--BTV-icon-text);
     margin-bottom: 16px;
+    font-weight: bold;
 }
 
 h1 {
