@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+<form name="form-User" id="formUsers" method="post" action="/store/">
+    <div class="form">
+<br>
+        <h3>Cadastro de usuários</h3>
+        {% if msg %}
+        <div class="alert {{class}}">
+{{msg}}
+        </div>
+{% endif %}
+       {% csrf_token %}
+       <input class="form1" type="text" name="name" id="name" placeholder="Digite seu nome">
+       <input class="form1" type="text" name="user" id="user" placeholder="Digite seu nome de usuário">
+       <input class="form1" type="password" name="password" id="password" placeholder="Digite sua senha">
+       <input class="form1" type="password" name="password-conf" id="password-conf" placeholder="Confirme sua senha">
+       <input class="form1" type="email" name="email" id="email" placeholder="Digite seu email">
+       <input class="btn" type="submit" value="Cadastrar">
+    </div>
+</form>
+<div>
+
+{% endblock %}

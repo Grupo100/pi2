@@ -25,4 +25,10 @@ urlpatterns = [
     path('administrativa/', views.administrativa, name = 'administrativa'),
     path('doar/', views.doar, name = 'doar'),
     path('admin/', admin.site.urls),
+    path('create/', views.create, name = 'create'),
+    path('store/', views.store, name = 'store'),
+    path('loginview/', views.loginview, name = 'loginview'),
+    path('areaadm/', views.areaadm, name = 'areaadm'),
+    path('logoff/', views.logoff, name = 'logoff'),
+    
 ]

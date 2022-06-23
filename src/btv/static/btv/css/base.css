@@ -617,3 +617,174 @@ body {
 h1 {
     color: var(--Btv-dark-primary);
 }
+
+/* ID Menu principal */
+#menu-h{
+    float: right;
+    transform: translate(-20%, 15%);
+    
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+    
+}
+#menu-h ul li a {
+    font: 22px sans-serif;
+    color: rgb(3, 80, 7);
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#menu-h ul li a:hover {
+    overflow: visible;
+    transform: scale(1.3);
+    transition: all 0.01s;
+    -moz-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    -ms-transition: all 0.1s
+
+}
+
+/* classe div para login */
+.divl{
+    background: #ffffff;
+    height: auto;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0%, -5%);
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgb(189, 189, 189);
+ }
+
+/* classe botao com efeito gradiente e movimento no clique */
+.btn{
+    background: linear-gradient(bottom, #339e1d, #63e657 70%);
+    background: -webkit-linear-gradient(bottom, #339e1d, #63e657 70%);
+    background: -moz-linear-gradient(bottom, #339e1d, #63e657 70%);
+    background: -o-linear-gradient(bottom, #339e1d, #63e657 70%);
+    background: -ms-linear-gradient(bottom, #339e1d, #63e657 70%);
+    border-radius: 8px;
+    color: #fff;
+    margin: 5px 5px 10px 5px;
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 15px;
+    position: relative;
+    width: auto;
+    border: none;
+}
+.btn:active{
+    top: 3px;
+   }
+.btn:active:before{
+    border: none;
+    box-shadow:none;
+   }
+
+/* classe efeito para input text */
+.b2{
+    border-radius: 3px;
+    height: 25px;
+    background: #e1ffdb;
+    margin: 10px 5px 10px 5px;
+    border: 1px solid rgb(189, 189, 189);
+    display: inside;
+}
+
+/* classe aumentar itens 'redes sociais e patrocinio' */
+.img-container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: visible;
+    margin: 5px 10px 5px 5px;
+    transform: translate(0%, 15%);
+ }
+ 
+.img-container img{
+    position:relative;
+    width: 100%;
+    height: 100%; 
+    padding: 0%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+  }
+ 
+.img-container:hover img{
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+ }
+
+ /* alertas de erro e sucesso*/
+.alertaer{
+    background: #fc7575;
+    border-radius: 3px;
+    height: 30px;
+    margin: 10px 5px 10px 5px;
+ }
+
+.alerta{
+    background: #a7f3a0;
+    border-radius: 3px;
+    height: 30px;
+    margin: 10px 5px 10px 5px;
+ }
+
+ /* Formulario */
+.form{
+    border-radius: 3px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+    margin: 10px 5px 10px 5px;
+    border: 1px solid rgb(189, 189, 189);
+    text-align: center;
+ }
+
+.form1{
+    height: 25px;
+    width: 380px;
+    border-radius: 3px;
+    background: #e1ffdb;
+    margin: 10px 5px 10px 5px;
+    border: 1px solid rgb(189, 189, 189);
+    text-align: center;
+}
+
+#menu2 a{
+    font: 1em 'inter' sans-serif;
+    color: rgb(3, 80, 7);
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    list-style: none;
+}
