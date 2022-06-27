@@ -788,3 +788,38 @@ h1 {
     text-decoration: none;
     list-style: none;
 }
+
+#menu2 {
+    margin: 16px auto;
+}
+
+/* Área  administrativa */
+
+.administrativa__title {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.administrativa__form__documento {
+    margin: 16px auto;
+    padding: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--BTV-divider);
+}
+
+.administrativa__form__documento > p {
+    margin: 8px;
+}
+
+.administrativa__tabela__documento {
+    margin: 16px 128px;
+    border: 2px solid var(--BTV-divider);
+}
+
+.administrativa__tabela__documento > th, td {
+    border: 2px solid var(--BTV-divider);
+    text-align: center;
+    padding: 4px;
+
+}

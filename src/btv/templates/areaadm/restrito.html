@@ -3,7 +3,7 @@
 
 {% block content %}
 
-<h2>Área Administrativa</h2>
+<h2 class="administrativa__title">Área Administrativa</h2>
 <nav id="menu2">
     <ul>
         <li><a href="/create/">Cadastro de novo Usuário</a></li>
@@ -11,5 +11,36 @@
         <li><a href="/logoff/">Sair</a></li>
     </ul>
 </nav>
+<br>
+<form  class="administrativa__form__documento" action="/areaadm/" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input class="administrativa__form__documento__btn" type="submit" value="Enviar">
+</form>
+<table class="administrativa__tabela__documento">
+    <thead>
+        <tr>
+            <th>Documento</th>
+            <th>Doador</th>
+            <th>Deletar</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for documento in documentos %}
+        <tr>
+            <td> {{documento.titulo}}</td>
+            <td> {{documento.doador}}</td>
+            <td> 
+                <form method="POST" action="{% url 'delete_doc' documento.pk %}">
+                    {% csrf_token %}
+                    <button type="submit">Deletar</button>
+                  </form>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+    
+</table>
 
 {% endblock %}
