@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from btv import views
 
 urlpatterns = [
@@ -30,5 +32,9 @@ urlpatterns = [
     path('loginview/', views.loginview, name = 'loginview'),
     path('areaadm/', views.areaadm, name = 'areaadm'),
     path('logoff/', views.logoff, name = 'logoff'),
+    path('areadm/<int:pk>/', views.delete_doc, name = 'delete_doc'),
     
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
