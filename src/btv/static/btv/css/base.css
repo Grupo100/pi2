@@ -471,8 +471,10 @@ body {
 
 .transparencia__list__item__title {
     margin-bottom: 16px;
+}
 
-
+.transparencia__link:hover {
+    text-decoration: underline;
 }
 
 

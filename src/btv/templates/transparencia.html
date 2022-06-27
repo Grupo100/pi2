@@ -16,7 +16,7 @@
                 <ul>
                     {% for documento in documentos %}
                         {% if documento.doador == doador %}
-                            <li><a href="{{ documento.pdf.url}}" target="_blank"> {{documento.titulo}}</a></li>
+                            <li><a href="{{ documento.pdf.url}}" target="_blank" class="transparencia__link"> {{documento.titulo}}</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul> 
