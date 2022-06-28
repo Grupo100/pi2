@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+{% if request.user.is_authenticated %}
 <div>
 <form name="form-User" id="formUsers" method="post" action="/store/">
     <div class="form">
@@ -22,5 +23,9 @@
     </div>
 </form>
 <div>
+        {% else %}
+        <h2>Para acessar essa área você precisa estar logado!<a href="/templates/administrativa">Faça login aqui</a>
+            </h2>
+        {% endif %}
 
 {% endblock %}
