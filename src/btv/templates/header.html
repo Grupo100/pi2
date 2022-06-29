@@ -1,13 +1,35 @@
 {% load static %}
-<header class="header">
-    <img class="logo" src="{% static 'btv/images/logo.jpg' %}">
-    <nav id="menu-h">
-        <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/quem_somos">Quem Somos</a></li>
-            <li><a href="/#localizacao">Localização</a></li>
-            <li><a href="/transparencia">Transparência</a></li>
-            <a href="/doar" ><input type="button" class="btn" value="Doar"></a>
-        </ul>
-    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    
+        <div class="container">
+            <img class="logo" src="{% static 'btv/images/logo.jpg' %}">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/quem_somos">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/#localizacao">Localização</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/transparencia">Transparência</a>
+            </li>
+            <li class="nav-item">
+                <a href="/doar" ><input type="button" class="btn" value="Doar"></a>
+            </li>
+            </ul>
+        </div>
+        </div>
+  </nav>
+
+
+<header> 
 </header>
+
