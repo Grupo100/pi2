@@ -2,20 +2,20 @@
 {% load static %}
 
 {% block content %}
-<div>
-<form name="formadm" id="formadm" method="post" action="/loginview/">
-    <div class="divl">
-        {% if msg %}
-        <div class="alertaer {{class}}">
-{{msg}}
+<div class="m-5">
+    <form name="formadm" id="formadm" method="post" action="/loginview/">
+        <div class="divl">
+            {% if msg %}
+            <div class="alertaer {{class}}">
+    {{msg}}
+            </div>
+    {% endif %}
+    <br><h2>Área admistrativa</h2>
+        {% csrf_token %}
+        <input class="b2" type="text" name="user" id="user" placeholder="Nome de usuário">
+        <input class="b2" type="password" name="password" id="password" placeholder="Digite sua senha">
+        <input class="btn"  type="submit" value="Entrar">
         </div>
-{% endif %}
-<br><h2>Área admistrativa</h2>
-       {% csrf_token %}
-       <input class="b2" type="text" name="user" id="user" placeholder="Nome de usuário">
-       <input class="b2" type="password" name="password" id="password" placeholder="Digite sua senha">
-       <input class="btn"  type="submit" value="Entrar">
-    </div>
-</form>
+    </form>
 </div>
 {% endblock %}

@@ -11,11 +11,14 @@
     </ul>
 </nav>
 <br>
+
+
 <form  class="administrativa__form__documento" action="/areaadm/" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
     <input class="administrativa__form__documento__btn" type="submit" value="Enviar">
 </form>
+
 <table class="administrativa__tabela__documento">
     <thead>
         <tr>
