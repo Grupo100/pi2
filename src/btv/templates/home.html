@@ -4,14 +4,7 @@
 <main class="homePage">
     <img class="homePhoto" src="{% static 'btv/images/home_photo.jpg' %}">
 
-
-    
-
-
-
-
-
-
+    <!-- QUEM SOMOS -->
     <div class="row">
         <div class="col-sm-6">
           <div class="card">
@@ -54,19 +47,11 @@
             </div>
         </div>
     </div>
-
-    <section class="patrocinadores">
-        <h2 class="patrocinadores__title">Patrocinadores</h2>
-        <section class="patrocinadores__list">
-            <img class="patrocinadores__list__logo" src="{% static 'btv/images/logo_patrocinador1.png' %}">
-            <img class="patrocinadores__list__logo" src="{% static 'btv/images/logo_patrocinador2.png' %}">
-            <img class="patrocinadores__list__logo" src="{% static 'btv/images/logo_patrocinador3.png' %}">
-            <img class="patrocinadores__list__logo" src="{% static 'btv/images/logo_patrocinador4.png' %}">
-        </section>
-
-    </section>
+    <!-- QUEM SOMOS -->
+    
+    <!-- NOSSO SONHO -->
     <section class="homeSonho">
-      <div class="container d-flex align-content-between justify-content-between">
+      <div class="container d-flex align-content-between justify-content-between nosso_sonho">
         <section class="homeSonho__item">
             <h2 class="homeSonho__item__sonho__title">Nosso sonho</h2>
             <p class="homeSonho__item__sonho__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus turpis massa tincidunt dui. Tortor consequat id porta nibh. Lobortis scelerisque fermentum dui faucibus in ornare. Erat pellentesque adipiscing commodo elit at imperdiet. Sit amet venenatis urna cursus. Platea dictumst vestibulum rhoncus est pellentesque elit. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Congue eu consequat ac felis donec et odio. Rhoncus mattis rhoncus urna neque. Et netus et malesuada fames ac turpis.</p>
@@ -77,7 +62,10 @@
         </section>
       </div>
     </section>
+    <!-- NOSSO SONHO -->
 
+    
+    <!-- NOVIDADES -->
     <section class="novidades">
         <h2 class="novidades__title">Nossas Novidades</h2>
         <section class="novidades__list">   
@@ -85,24 +73,56 @@
             <script src="https://w.behold.so/widget.js" type="module"></script>
         </section>
     </section>
-    <section class="localizacao">
-        <h2 class="localizacao__title" id="localizacao">Nossa Localização</h2>
-        <section class="localizacao__list">
-            <section class="localizacao__item">
-                <iframe class="localizacao__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.371408448521!2d-45.89136088449626!3d-23.193131484866946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a14afc7e531%3A0xbf7884c8622397d4!2sR.%20Paulo%20Set%C3%BAbal%2C%20263%20-%20Jardim%20Sao%20Dimas%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012245-460!5e0!3m2!1spt-PT!2sbr!4v1655501611272!5m2!1spt-PT!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <section class="localizacao__item">
-                <address class="localizacao__item__endereco">
-                    Rua Paulo Setúbal <br>
-                    Jardim São Dimas, São José dos Campos - SP <br>
-                    CEP: 12245-460
-                </address>
-            </section>
-                <section class="localizacao__item">
-                    <img class="localizacao__item__photo" src="{% static 'btv/images/localizacao_btv.jpg' %}">
-                </section>
-        </section>
+    <!-- NOVIDADES -->
+
+    <!-- PATROCINADORES -->
+    <section class="patrocinadores">
+      <h2 class="patrocinadores__title">Patrocinadores</h2>
+      <section class="patrocinadores__list d-flex flex-wrap">
+        <img class="patrocinadores__list__logo" src="{% static 'btv/images/logo_patrocinador1.png' %}">
+        <img class="patrocinadores__list__logo" src="{% static 'btv/images/logo_patrocinador2.png' %}">
+        <img class="patrocinadores__list__logo" src="{% static 'btv/images/logo_patrocinador3.png' %}">
+        <img class="patrocinadores__list__logo" src="{% static 'btv/images/logo_patrocinador4.png' %}">
     </section>
+    </section>
+  <!-- /PATROCINADORES -->
+
+  <!-- LOCALIZAÇÃO -->
+  <div class="container contato_localizacao">
+    <div class="row contato">
+      <div class="col-md-12">
+          <h2 class="text-center">Veja nossas informações para contato e localização</h2>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 endereco">      
+              
+              <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <span class="text-uppercase">ENDEREÇO: </span>
+                  <span>Rua Paulo Setúbal, Jardim São Dimas <br>São José dos Campos/SP CEP: 12245-460</span>
+              </div>
+              <div class="info-box">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span class="text-uppercase">Email:</span>
+                  <span>contato@associacao.org.br</span>
+              </div>
+              <div class="info-box">
+                  <i class="bi bi-whatsapp"></i>
+                  <span class="text-uppercase">Telefone/Whatsapp: </span>
+                  <span>12 98232 3135 </span>
+              </div>
+              <div class="mapa">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234718.24138413064!2d-46.003098637900486!3d-23.189444263625827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bb3858cc2e7%3A0xba25a33168f8c1!2zU8OjbyBKb3PDqSBkb3MgQ2FtcG9zLCBTUA!5e0!3m2!1spt-BR!2sbr!4v1630288074645!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+      </div>
+
+      
+        <div class="col-12 col-sm-12 col-md-6 endereco_foto">
+          <img class="localizacao__item__photo" src="{% static 'btv/images/localizacao_btv.jpg' %}">  
+        </div>
+    </div>
+  </div>
+  <!-- LOCALIZAÇÃO --> 
 </main>
     
     
